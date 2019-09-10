@@ -4,7 +4,7 @@ services:
 
 
 before_install:
- - docker build - mojogoro/docker-example -f Dockerfile.dev .
+ - docker build -t mojogoro/docker-example -f Dockerfile.dev .
 
 script:
  - docker run mojogoro/docker-example npm run test -- --coverage 
