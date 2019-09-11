@@ -1,4 +1,4 @@
-sudo: required
+sudo: required	
 services: 
  - docker
 
@@ -8,3 +8,4 @@ before_install:
 
 script:
  - docker run mojogoro/docker-example npm run test -- --coverage 
+ - ^C
